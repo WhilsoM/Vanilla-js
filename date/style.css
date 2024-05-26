@@ -1,0 +1,30 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url('bgc.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.date {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.day {
+	color: #4658bf;
+	font-size: 24px;
+}
+
+.time {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 18px;
+	color: #4658bf;
+}
