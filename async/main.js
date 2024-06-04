@@ -1,5 +1,17 @@
-// // promise
-// // games html render
+async function loadJson(url) {
+	const fetchURL = await fetch(url).catch((err) => {
+		console.log(err)
+		document.querySelector('body').innerHTML = `Ошибка: ${err}`
+		return {
+			error: true,
+		}
+	})
+}
+
+loadJson('no-such-user.json')
+
+//  promise
+// games html render
 
 // const body = document.querySelector('body')
 // const h2Elem = document.querySelector('h2')
