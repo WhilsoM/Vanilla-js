@@ -1,0 +1,17 @@
+div {
+	background-color: green;
+	margin-bottom: 15px;
+	cursor: pointer;
+	margin-left: 15px;
+}
+
+div:hover {
+	background-color: violet;
+}
+
+#loading {
+	background-color: #fff;
+	cursor: auto;
+	font-size: 20px;
+	margin-left: 15px;
+}
