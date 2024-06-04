@@ -1,5 +1,6 @@
 // api: https://open-meteo.com/
-
+// update version from 0.2 to 0.3
+//
 const latitudeNode = document.querySelector('#latitude')
 const longitudeNode = document.querySelector('#longitude')
 const btnNode = document.querySelector('#submit')
@@ -45,10 +46,10 @@ function renderWeather(data) {
 	const roundTemperature = Math.round(currentData.temperature_2m)
 
 	const result = `
-  <p>Широта: ${latitudeData}</p>
-  <p>Долгота: ${longitudeData}</p>
-  <p>Температура: ${roundTemperature}&deg;C</p>
-  <p>Сейчас: ${currentData.is_day === 0 ? 'Ночь' : 'День'}</p>
+  <p>latitude: ${latitudeData}</p>
+  <p>longitude: ${longitudeData}</p>
+  <p>Temperature: ${roundTemperature}&deg;C</p>
+  <p>Today: ${currentData.is_day === 0 ? 'Night' : 'Day'}</p>
   `
 
 	resultNode.innerHTML = ''
