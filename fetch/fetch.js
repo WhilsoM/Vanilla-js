@@ -43,21 +43,22 @@
 // methods: GET, POST, DELETE, PUT
 
 // fetch
-const URL = 'https://jsonplaceholder.typicode.com/posts/1'
-const newPost = {
-	userId: 1,
-	id: 18888,
-	title: 'Hello, this title',
-	body: 'This paragraph and text for id 18888',
-}
+// const URL = 'https://jsonplaceholder.typicode.com/posts/1'
+// const newPost = {
+// 	userId: 1,
+// 	id: 18888,
+// 	title: 'Hello, this title',
+// 	body: 'This paragraph and text for id 18888',
+// }
 
-fetch(URL, {
-	method: 'POST',
-})
-	.then((data) => {
-		return data.json()
-	})
-	.then((data) => {
-		const data2 = data
-		console.log(data2)
-	})
+// fetch(URL, {
+// 	method: 'POST',
+// body: JSON.stringify(newPost)
+// })
+// 	.then((data) => {
+// 		return data.json()
+// 	})
+// 	.then((data) => {
+// 		const data2 = data
+// 		console.log(data2)
+// 	})
