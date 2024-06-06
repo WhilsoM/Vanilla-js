@@ -1,7 +1,7 @@
 async function loadJson(url) {
-	const fetchURL = await fetch(url).catch((err) => {
-		console.log(err)
-		document.querySelector('body').innerHTML = `Ошибка: ${err}`
+	const fetchURL = await fetch(url).catch((error) => {
+		console.log(error)
+		document.querySelector('body').innerHTML = `Error: ${error}`
 		return {
 			error: true,
 		}
