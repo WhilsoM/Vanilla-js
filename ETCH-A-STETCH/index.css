@@ -1,0 +1,27 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+#canvas {
+	background-color: #000;
+	width: 400px;
+	height: 400px;
+	position: relative;
+	border: 3px solid turquoise;
+	/* display: flex; */
+}
+
+.box {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+}
